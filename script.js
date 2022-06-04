@@ -48,7 +48,7 @@ function game() {
 
     for (let i = 0; i < 5; i++) {
 
-        const playerSelection = prompt("Enter your choice").toLowerCase();
+        const playerSelection = prompt("rock, paper or scissors?").toLowerCase();
         console.log(playerSelection);
         const computerSelection = computerPlay();
         const whoWin = playRound(playerSelection, computerSelection);
