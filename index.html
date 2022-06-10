@@ -5,10 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors</title>
 </head>
 
 <body>
+    <div class="container">
+        <div>
+            <table id="grid">
+                <tr>
+                    <th>
+                        <div class="player">Player:</div>
+                    </th>
+                    <th>
+                        <div class="computer">Computer:</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="playerTotal">0</div>
+                    </td>
+                    <td>
+                        <div class="computerTotal">0</div>
+                    </td>
+                </tr>
+                <div class="wrapResult">
+                    <tr>
+                        <td>
+                            <div id="myDiv" class="result"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="finalResult"></div>
+                        </td>
+                    </tr>
+                </div>
+            </table>
+
+        </div>
+        <div class="wrapBtn">
+            <button class="selection">Rock</button>
+            <button class="selection">Paper</button>
+            <button class="selection">Scissors</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
