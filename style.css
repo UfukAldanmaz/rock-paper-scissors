@@ -1,0 +1,95 @@
+body {
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    left: 25%;
+    position: relative;
+    background-color: rgb(245, 144, 161);
+    height: 700px;
+    width: 800px;
+    margin: 25px;
+    align-items: center;
+}
+
+#grid {
+    width: 700px;
+    height: 400px;
+}
+
+.player {
+    margin: 25px 0 15px 0;
+    background-color: green;
+    text-align: left;
+    width: 350px;
+    font-size: 22px;
+    padding: 5px 0px 5px 5px;
+}
+
+.computer {
+    margin: 25px 0 15px 0;
+    background-color: yellow;
+    text-align: left;
+    font-size: 22px;
+    padding: 5px 0px 5px 5px;
+    width: 350px;
+}
+
+.result {
+
+    background-color: pink;
+    text-align: center;
+    margin: 0px -325px 0 25px;
+    font-size: 26px;
+}
+
+
+.playerTotal {
+    margin: 25px 0 15px 0;
+    background-color: blue;
+    font-size: 48px;
+    text-align: center;
+}
+
+.computerTotal {
+    margin: 25px 0 15px 0;
+    background-color: blueviolet;
+    font-size: 48px;
+    text-align: center;
+}
+
+.finalResult {
+    background-color: chocolate;
+    text-align: center;
+    margin: 20px -325px 30px 25px;
+    font-size: 36px;
+}
+
+.wrapBtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.selection {
+    background-color: beige;
+    border: none;
+    width: 90px;
+    height: 55px;
+    margin: 25px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: beige;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(241, 198, 158);
+    font-size: 18px;
+}
