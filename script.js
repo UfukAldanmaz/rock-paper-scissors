@@ -24,7 +24,7 @@ selectBtn.forEach(button => button.addEventListener("click", () => {
 }))
 
 function computerPlay() {
-    const arr = ["Rock", "Paper", "Scissors"];
+    const arr = ["✊", "✋", "✌"];
     const random = Math.floor(Math.random() * arr.length);
     return arr[random];
 }
@@ -36,23 +36,23 @@ const draw = "Draw!"
 function playRound(player, computer) {
 
     switch (true) {
-        case (player == "Rock" && computer == "Scissors"):
+        case (player == "✊" && computer == "✌"):
             return playerWin;
-        case (player == "Scissors" && computer == "Paper"):
+        case (player == "✌" && computer == "✋"):
             return playerWin;
-        case (player == "Paper" && computer == "Rock"):
+        case (player == "✋" && computer == "✊"):
             return playerWin;
-        case (player == "Scissors" && computer == "Rock"):
+        case (player == "✌" && computer == "✊"):
             return computerWin;
-        case (player == "Rock" && computer == "Paper"):
+        case (player == "✊" && computer == "✋"):
             return computerWin;
-        case (player == "Paper" && computer == "Scissors"):
+        case (player == "✋" && computer == "✌"):
             return computerWin;
-        case (player == "Rock" && computer == "Rock"):
+        case (player == "✊" && computer == "✊"):
             return draw;
-        case (player == "Scissors" && computer == "Scissors"):
+        case (player == "✌" && computer == "✌"):
             return draw;
-        case (player == "Paper" && computer == "Paper"):
+        case (player == "✋" && computer == "✋"):
             return draw;
     }
 }
@@ -83,13 +83,31 @@ function calculateWinner() {
         finalResult.innerHTML = "Computer won! <br> <button onclick='window.location.reload(true)'> Click here to play again! </button> ";
         let element = document.getElementById("myDiv");
         element.remove();
+        let ele1 = document.getElementById("btn1");
+        ele1.remove();
+        let ele2 = document.getElementById("btn2");
+        ele2.remove();
+        let ele3 = document.getElementById("btn3");
+        ele3.remove();
     } else if (playerScore > computerScore) {
         finalResult.innerHTML = "You won! <br> <button onclick='window.location.reload(true)'> Click here to play again! </button>"
         let element = document.getElementById("myDiv");
         element.remove();
+        let ele1 = document.getElementById("btn1");
+        ele1.remove();
+        let ele2 = document.getElementById("btn2");
+        ele2.remove();
+        let ele3 = document.getElementById("btn3");
+        ele3.remove();
     } else if (playerScore == computerScore) {
         finalResult.innerHTML = "It's a tie! <br> <button onclick='window.location.reload(true)'> Click here to play again! </button>";
         let element = document.getElementById("myDiv");
         element.remove();
+        let ele1 = document.getElementById("btn1");
+        ele1.remove();
+        let ele2 = document.getElementById("btn2");
+        ele2.remove();
+        let ele3 = document.getElementById("btn3");
+        ele3.remove();
     }
 }
