@@ -24,7 +24,7 @@ body {
     background-color: green;
     text-align: left;
     width: 350px;
-    font-size: 22px;
+    font-size: 28px;
     padding: 5px 0px 5px 5px;
 }
 
@@ -32,7 +32,7 @@ body {
     margin: 25px 0 15px 0;
     background-color: yellow;
     text-align: left;
-    font-size: 22px;
+    font-size: 28px;
     padding: 5px 0px 5px 5px;
     width: 350px;
 }
@@ -73,13 +73,18 @@ body {
 }
 
 .selection {
-    background-color: beige;
+
     border: none;
     width: 90px;
-    height: 55px;
+    height: 85px;
     margin: 25px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 52px;
+}
+
+.selection:hover {
+    background-color: rgb(241, 198, 158);
+    font-size: 60px;
 }
 
 button {
