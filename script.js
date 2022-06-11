@@ -89,6 +89,9 @@ function calculateWinner() {
         ele2.remove();
         let ele3 = document.getElementById("btn3");
         ele3.remove();
+        let h1 = document.createElement('h1');
+        h1.textContent = "Don't worry, try again!";
+        document.getElementById('final').appendChild(h1);
     } else if (playerScore > computerScore) {
         finalResult.innerHTML = "You won! <br> <button onclick='window.location.reload(true)'> Click here to play again! </button>"
         let element = document.getElementById("myDiv");
@@ -99,6 +102,9 @@ function calculateWinner() {
         ele2.remove();
         let ele3 = document.getElementById("btn3");
         ele3.remove();
+        let h1 = document.createElement('h1');
+        h1.textContent = 'Congratulations!';
+        document.getElementById('final').appendChild(h1);
     } else if (playerScore == computerScore) {
         finalResult.innerHTML = "It's a tie! <br> <button onclick='window.location.reload(true)'> Click here to play again! </button>";
         let element = document.getElementById("myDiv");
@@ -109,5 +115,8 @@ function calculateWinner() {
         ele2.remove();
         let ele3 = document.getElementById("btn3");
         ele3.remove();
+        let h1 = document.createElement('h1');
+        h1.textContent = 'You both were lucky!';
+        document.getElementById('final').appendChild(h1);
     }
 }
